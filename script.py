@@ -2,3 +2,6 @@
 #
 # First import the CSV module, since we’ll be needing it to parse the data.
 import csv
+
+# We need to create a list of users whose passwords have been compromised, create a new list and save it to the variable compromised_users.
+compromised_users = []
