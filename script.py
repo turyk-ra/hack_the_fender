@@ -23,3 +23,7 @@ with open("passwords.csv","r") as password_file:
 #
 # Start a new with block, opening a file called compromised_users.txt. Open this file in write-mode, saving the file object as compromised_user_file.
 with open("compromised_users.txt", "w") as compromised_user_file:
+# Inside the new context-managed block opened by the with statement start a new for loop.
+#
+# Iterate over each of your compromised_users.
+    for user in compromised_users:
