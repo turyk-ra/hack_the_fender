@@ -37,3 +37,9 @@ with open("compromised_users.txt", "w") as compromised_user_file:
 # First we’ll need to import the json module.
 # Open a new JSON file in write-mode called boss_message.json. Save the file object to the variable boss_message.
 with open("boss_message.json") as boss_message:
+# Create a Python dictionary object within your with statement that relays a boss message. Call this boss_message_dict.
+#
+# Give it a "recipient" key with a value "The Boss".
+#
+# Also give it a "message" key with the value "Mission Success".
+    boss_message_dict = {"The Boss": "Mission Success"}
