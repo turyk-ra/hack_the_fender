@@ -45,3 +45,7 @@ with open("boss_message.json","w") as boss_message:
     boss_message_dict = {"The Boss": "Mission Success"}
 # Write out boss_message_dict to boss_message using json.dump().
     json.dump(boss_message_dict,boss_message)
+# Now that we’ve safely recovered the compromised users we’ll want to remove the "passwords.csv" file completely.
+#
+# Create a new with block and open "new_passwords.csv" in write-mode. Save the file object to a variable called new_passwords_obj.
+with open("new_passwords.csv","w") as new_passwords_obj:
