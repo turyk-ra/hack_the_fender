@@ -9,3 +9,7 @@ compromised_users = []
 with open("passwords.csv","r") as password_file:
 # Pass the password_file object holder to our CSV reader for parsing. Save the parsed csv.DictReader object as password_csv.
     password_csv = csv.DictReader(password_file)
+# Now we’ll want to iterate through each of the lines in the CSV.
+#
+# Create a for loop and save each row of the CSV into the temporary variable password_row.
+    for password_row in password_csv:
