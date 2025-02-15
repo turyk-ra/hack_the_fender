@@ -7,3 +7,5 @@ import csv
 compromised_users = []
 # Next we’ll need you to open up the file itself. Store it in a file object called password_file.
 with open("passwords.csv","r") as password_file:
+# Pass the password_file object holder to our CSV reader for parsing. Save the parsed csv.DictReader object as password_csv.
+    password_csv = csv.DictReader(password_file)
