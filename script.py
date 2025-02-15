@@ -5,3 +5,5 @@ import csv
 
 # We need to create a list of users whose passwords have been compromised, create a new list and save it to the variable compromised_users.
 compromised_users = []
+# Next we’ll need you to open up the file itself. Store it in a file object called password_file.
+with open("passwords.csv","r") as password_file:
