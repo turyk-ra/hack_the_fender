@@ -27,3 +27,6 @@ with open("compromised_users.txt", "w") as compromised_user_file:
 #
 # Iterate over each of your compromised_users.
     for user in compromised_users:
+# Write the username of each compromised_user in compromised_users to compromised_user_file.
+        compromised_user_file.write(user)
+# Exit out of that with block. You’re doing great so far! We’ve got the data we need to employ as insurance against The Fender.
