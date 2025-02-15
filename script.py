@@ -2,6 +2,7 @@
 #
 # First import the CSV module, since we’ll be needing it to parse the data.
 import csv
+import json
 
 # We need to create a list of users whose passwords have been compromised, create a new list and save it to the variable compromised_users.
 compromised_users = []
@@ -30,3 +31,9 @@ with open("compromised_users.txt", "w") as compromised_user_file:
 # Write the username of each compromised_user in compromised_users to compromised_user_file.
         compromised_user_file.write("{0}\n".format(user))
 # Exit out of that with block. You’re doing great so far! We’ve got the data we need to employ as insurance against The Fender.
+
+# Your boss needs to know that you were successful in retrieving that compromised data. We’ll need to send him an encoded message over the internet. Let’s use JSON to do that.
+#
+# First we’ll need to import the json module.
+# Open a new JSON file in write-mode called boss_message.json. Save the file object to the variable boss_message.
+with open("boss_message.json") as boss_message:
